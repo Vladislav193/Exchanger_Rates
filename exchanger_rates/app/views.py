@@ -11,7 +11,7 @@ class RatesViewSet(viewsets.ModelViewSet):
 
 
 
-class RatesHistoryViewSet(viewsets.ModelViewSet)
+class RatesHistoryViewSet(viewsets.ModelViewSet):
     queryset = CurrencyRateHistory.objects.all()
     serializer_class = ExchangerRatesHistorySerializers
 
